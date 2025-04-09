@@ -105,14 +105,13 @@ public class GamePanel extends JPanel implements KeyListener, ActionListener {
         if(notPlaying){
             g.setFont(new Font("Arial", Font.BOLD, 50));
 
-            // Center "Flappy Bird"
             String title = "Flappy Bird";
             FontMetrics fm = g.getFontMetrics();
             int titleWidth = fm.stringWidth(title);
             int titleX = (boardWidth - titleWidth) / 2;
-            int titleY = boardHeight / 4; // Adjust for better positioning
+            int titleY = boardHeight / 4;
             g.drawString(title, titleX, titleY);
-            // Display "made by master Justin" at the bottom-left
+
 
             g.setFont(new Font("Arial", Font.PLAIN, 25));
             g.drawString("made by master Justin", 10, 50);
